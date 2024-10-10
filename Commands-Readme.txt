@@ -18,6 +18,8 @@ The last command will ask for password which is ‘pass@word1’
 * Mandatory: Before final submission run the following command: 
 	mvn test
 
+* NOTE: Ensure the project is in a running state before executing the mvn test command. This ensures that all configurations and dependencies are properly set up for the tests to run successfully.
+
 * To ensure your code is saved and available for later use, remember to use the CTRL+Shift+B command on your code IDE.
    This will push or save the updated contents in the internal git/repository.
    It is also important to use CTRL+Shift+B before the final submission to evaluate the code quality.
