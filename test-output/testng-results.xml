@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="0" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-22T13:28:32 IST" name="Suite" finished-at="2024-10-22T13:28:52 IST" duration-ms="19780">
+    <groups>
+      <group name="sanity">
+        <method signature="RestAssured_TestCases.verifyGetPostById()[pri:1, instance:testcases.RestAssured_TestCases@76f10035]" name="verifyGetPostById" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.verifyAddPost()[pri:2, instance:testcases.RestAssured_TestCases@76f10035]" name="verifyAddPost" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.verifyUpdatePost()[pri:3, instance:testcases.RestAssured_TestCases@76f10035]" name="verifyUpdatePost" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.verifyDeletePost()[pri:4, instance:testcases.RestAssured_TestCases@76f10035]" name="verifyDeletePost" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.verifyGetCommentsForPost()[pri:5, instance:testcases.RestAssured_TestCases@76f10035]" name="verifyGetCommentsForPost" class="testcases.RestAssured_TestCases"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2024-10-22T13:28:32 IST" name="Test" finished-at="2024-10-22T13:28:52 IST" duration-ms="19780">
+      <class name="testcases.RestAssured_TestCases">
+        <test-method signature="verifyGetPostById()[pri:1, instance:testcases.RestAssured_TestCases@76f10035]" started-at="2024-10-22T13:28:32 IST" name="verifyGetPostById" description="Precondition: Access to JSONPlaceholder API
+1. Send GET request to retrieve post by ID
+2. Verify the response status code is 200
+3. Validate the response body contains the expected post data" finished-at="2024-10-22T13:28:32 IST" duration-ms="38" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.getStatusCode()" because "response" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getStatusCode()" because "response" is null
+at testcases.RestAssured_TestCases.verifyGetPostById(RestAssured_TestCases.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetPostById -->
+        <test-method signature="verifyAddPost()[pri:2, instance:testcases.RestAssured_TestCases@76f10035]" started-at="2024-10-22T13:28:39 IST" name="verifyAddPost" description="Precondition: Access to JSONPlaceholder API
+1. Send POST request to create a new post
+2. Verify the response status code is 201
+3. Validate the response body contains the expected post data" finished-at="2024-10-22T13:28:39 IST" duration-ms="6" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.util.Map.get(Object)" because "postData" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Map.get(Object)" because "postData" is null
+at testcases.RestAssured_TestCases.verifyAddPost(RestAssured_TestCases.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddPost -->
+        <test-method signature="verifyUpdatePost()[pri:3, instance:testcases.RestAssured_TestCases@76f10035]" started-at="2024-10-22T13:28:42 IST" name="verifyUpdatePost" description="Precondition: Access to JSONPlaceholder API
+1. Send PUT request to update an existing post
+2. Verify the response status code is 200
+3. Validate the response body contains the updated post data" finished-at="2024-10-22T13:28:42 IST" duration-ms="8" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.getStatusCode()" because "response" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getStatusCode()" because "response" is null
+at testcases.RestAssured_TestCases.verifyUpdatePost(RestAssured_TestCases.java:119)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdatePost -->
+        <test-method signature="verifyDeletePost()[pri:4, instance:testcases.RestAssured_TestCases@76f10035]" started-at="2024-10-22T13:28:45 IST" name="verifyDeletePost" description="Precondition: Access to JSONPlaceholder API
+1. Send DELETE request to delete an existing post by ID
+2. Verify the response status code is 200 or 204
+3. Ensure the post is deleted by verifying a GET request returns 404" finished-at="2024-10-22T13:28:45 IST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.getStatusCode()" because "deleteResponse" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getStatusCode()" because "deleteResponse" is null
+at testcases.RestAssured_TestCases.verifyDeletePost(RestAssured_TestCases.java:148)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeletePost -->
+        <test-method signature="verifyGetCommentsForPost()[pri:5, instance:testcases.RestAssured_TestCases@76f10035]" started-at="2024-10-22T13:28:48 IST" name="verifyGetCommentsForPost" description="Precondition: Access to JSONPlaceholder API
+1. Send GET request to retrieve comments for a post by postId
+2. Verify the response status code is 200
+3. Validate that the response contains comments data" finished-at="2024-10-22T13:28:48 IST" duration-ms="11" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.getStatusCode()" because "getCommentsResponse" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getStatusCode()" because "getCommentsResponse" is null
+at testcases.RestAssured_TestCases.verifyGetCommentsForPost(RestAssured_TestCases.java:167)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetCommentsForPost -->
+      </class> <!-- testcases.RestAssured_TestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
